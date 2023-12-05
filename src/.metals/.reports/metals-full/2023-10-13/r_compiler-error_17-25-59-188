@@ -1,0 +1,67 @@
+java.lang.IndexOutOfBoundsException: 0
+occurred in the presentation compiler.
+
+action parameters:
+offset: 1441
+uri: file://<HOME>/Chisel%20Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/CoreTop.scala
+text:
+package DataPathSSP
+
+import chisel3._
+import chisel3.util._
+
+class CoreTop extends Module
+{
+    val io = IO(new Bundle{
+        val core_top_imem_en        = Output(Bool())
+        val core_top_ins            = Input(UInt(32.w))  // Instruction will come from IMEM
+        val dataIn = Input( UInt(32.W))
+        val wen = Input(Bool())
+        val ren = Input(Bool())
+        val rd_addr = Output(UInt(32.W))
+        val wr_addr = Output(UInt(32.W))
+        // val dataOut = Output(UInt(32.W))
+        
+    })
+
+    val fetch_module        = Module(new Fetch)
+    val decode_module       = Module(new Decode)
+    val execute_module      = Module(new Execute)  
+
+    // Will enable instruction memory(IMEM) using control unit(CU) in Decode
+    io.core_top_imem_en := decode_module.decode_imem_en
+
+    // Taking Instruction from IMEM using core top and giving to Decode Module
+    decode_module.ins   := io.core_top_ins
+
+    // 2 Bit address for selecting masked bytes of memory address
+    decode_module.io.dmem_addr2 := (execute_module.io.out)(1,0)    
+
+    execute_module.io.execute_in_A      := decode_module_rdata1
+    execute_module.io.execute_in_B      := decode_module_rdata2
+    execute_module.io.execute_alu_Op    := decode_func3_7
+
+    // Assigning write data of register file using ALU output
+    decode_module.io.decode_regfile_wdata :=  execute_module.io.execute_out
+
+    when(decode_module.io.decode_r_en)
+    {
+
+    }.elsewhen(@@)
+
+
+
+}
+
+
+error stacktrace:
+scala.collection.LinearSeqOps.apply(LinearSeq.scala:131)
+	scala.collection.LinearSeqOps.apply$(LinearSeq.scala:128)
+	scala.collection.immutable.List.apply(List.scala:79)
+	dotty.tools.dotc.util.Signatures$.countParams(Signatures.scala:501)
+	dotty.tools.dotc.util.Signatures$.applyCallInfo(Signatures.scala:186)
+	dotty.tools.dotc.util.Signatures$.computeSignatureHelp(Signatures.scala:94)
+	dotty.tools.dotc.util.Signatures$.signatureHelp(Signatures.scala:63)
+	scala.meta.internal.pc.MetalsSignatures$.signatures(MetalsSignatures.scala:17)
+	scala.meta.internal.pc.SignatureHelpProvider$.signatureHelp(SignatureHelpProvider.scala:51)
+	scala.meta.internal.pc.ScalaPresentationCompiler.signatureHelp$$anonfun$1(ScalaPresentationCompiler.scala:371)

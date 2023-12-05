@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/CoreTop.scala:136:13: value core_top_ins is not a member of chisel3.Bundle{val dataIn: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m    when(io.core_top_ins(6,0) === "h23".U)[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/CoreTop.scala:156:19: value core_top_ins is not a member of chisel3.Bundle{val dataIn: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m    }.elsewhen(io.core_top_ins(6,0) === 3.U)[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

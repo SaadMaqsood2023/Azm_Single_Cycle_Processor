@@ -1,0 +1,21 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlFileAnnotation",
+    "file":"test_run_dir/Top_Test_Pipeline/CoreTop.lo.fir"
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.LowFirrtlEmitter"
+  },
+  {
+    "class":"firrtl.annotations.LoadMemoryAnnotation",
+    "target":"CoreTop.IMEM.async_mem",
+    "fileName":"/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main-Pipeline/src/main/scala/gcd/DataPathPipeline/assemblyHexcode.txt",
+    "hexOrBinary":"h",
+    "originalMemoryNameOpt":"async_mem"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir/Top_Test_Pipeline"
+  }
+]

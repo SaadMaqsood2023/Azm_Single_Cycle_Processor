@@ -1,0 +1,13 @@
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main-Pipeline/src/test/scala/gcd/DataPathPipeline/ALU_Test.scala:11:18: not found: type ALU[0m
+[0m[[0m[31merror[0m] [0m[0m        test(new ALU) { a => [0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main-Pipeline/src/test/scala/gcd/DataPathPipeline/IMEM_Test.scala:12:18: not found: type IMEM[0m
+[0m[[0m[31merror[0m] [0m[0m        test(new IMEM ){ a =>   // Write the data type and width of inputs, not the data itself[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main-Pipeline/src/test/scala/gcd/DataPathPipeline/PC_Test.scala:11:18: not found: type PC[0m
+[0m[[0m[31merror[0m] [0m[0m        test(new PC(16)){ a =>   // Write the data type and width of inputs, not the data itself[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main-Pipeline/src/test/scala/gcd/DataPathPipeline/RegisterFile_Test.scala:11:18: not found: type RegisterFile[0m
+[0m[[0m[31merror[0m] [0m[0m        test(new RegisterFile ){ a =>   // Write the data type and width of inputs, not the data itself[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m

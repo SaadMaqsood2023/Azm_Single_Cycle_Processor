@@ -1,0 +1,187 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly DataPath.Decode, Some(18ebce8f-889d-41e1-afa4-b0c9d6f6330b), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 7 Scala sources to /home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/CoreTop.scala:11:53: value w is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m        val core_top_ins            = Input(UInt(32.w))  // Instruction will come from IMEM[0m
+[0m[[0m[31merror[0m] [0m[0m                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/CoreTop.scala:28:42: value decode_imem_en is not a member of DataPathSSP.Decode[0m
+[0m[[0m[31merror[0m] [0m[0m    io.core_top_imem_en := decode_module.decode_imem_en[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/CoreTop.scala:31:19: value ins is not a member of DataPathSSP.Decode[0m
+[0m[[0m[31merror[0m] [0m[0m    decode_module.ins   := io.core_top_ins[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/CoreTop.scala:34:44: not found: value decode_module_rdata1[0m
+[0m[[0m[31merror[0m] [0m[0m    execute_module.io.execute_in_A      := decode_module_rdata1[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/CoreTop.scala:35:44: not found: value decode_module_rdata2[0m
+[0m[[0m[31merror[0m] [0m[0m    execute_module.io.execute_in_B      := decode_module_rdata2[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/CoreTop.scala:36:44: not found: value decode_func3_7[0m
+[0m[[0m[31merror[0m] [0m[0m    execute_module.io.execute_alu_Op    := decode_func3_7[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/CoreTop.scala:41:22: value dmem_addr2 is not a member of chisel3.Bundle{val decode_ins: chisel3.UInt; val decode_dmem_addr2: chisel3.UInt; val decode_regfile_wdata: chisel3.UInt; val decode_pc_out: chisel3.SInt; val decode_w_en: chisel3.Bool; val decode_imem_en: chisel3.Bool; val decode_pc_en_jump: chisel3.Bool; val decode_pc_en_jalr: chisel3.Bool; val decode_pc_br_imm: chisel3.SInt; val decode_r_en: chisel3.Bool; val decode_dmem_en: chisel3.Bool; val decode_immediate: chisel3.UInt; val decode_func3_7: chisel3.UInt; val decode_br_en: chisel3.Bool; val decode_unbr_en: chisel3.Bool; val decode_mask_val: chisel3.Vec[chisel3.Bool]; val decode_jalr_en: chisel3.Bool; val decode_rdata1: chisel3.UInt; val decode_rdata2: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m    decode_module.io.dmem_addr2             := (execute_module.io.execute_out)(1,0)    [0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/CoreTop.scala:47:18: value mem_cu_immediate is not a member of chisel3.Bundle{val wb_mask_addr2: chisel3.UInt; val wb_opcode: chisel3.UInt; val wb_func3_7: chisel3.UInt; val wb_cu_immediate: chisel3.UInt; val wb_dmem_dataOut: chisel3.Vec[chisel3.UInt]; val wb_alu_out: chisel3.UInt; val wb_alu_in_A: chisel3.UInt; val wb_alu_in_B: chisel3.UInt; val wb_alu_Op: chisel3.UInt; val wb_dataOut: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m    wb_module.io.mem_cu_immediate       := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/CoreTop.scala:79:50: not found: value register_module[0m
+[0m[[0m[31merror[0m] [0m[0m        memory_module.io.mem_datainput        := register_module.io.rdata2[0m
+[0m[[0m[31merror[0m] [0m[0m                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/CoreTop.scala:85:63: value mem_alu_Op is not a member of chisel3.Bundle{val wb_mask_addr2: chisel3.UInt; val wb_opcode: chisel3.UInt; val wb_func3_7: chisel3.UInt; val wb_cu_immediate: chisel3.UInt; val wb_dmem_dataOut: chisel3.Vec[chisel3.UInt]; val wb_alu_out: chisel3.UInt; val wb_alu_in_A: chisel3.UInt; val wb_alu_in_B: chisel3.UInt; val wb_alu_Op: chisel3.UInt; val wb_dataOut: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m        execute_module.io.execute_alu_Op      := wb_module.io.mem_alu_Op[0m
+[0m[[0m[31merror[0m] [0m[0m                                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Decode.scala:57:5: not found: value alu_module[0m
+[0m[[0m[31merror[0m] [0m[0m    alu_module.io.alu_Op := cu_module.io.func3_7    // assigning opcode from CU[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Decode.scala:90:22: value in_A is not a member of chisel3.Bundle{val func3: chisel3.UInt; val br_ins: chisel3.Bool; val inpA: chisel3.UInt; val inpB: chisel3.UInt; val br_taken: chisel3.Bool}[0m
+[0m[[0m[31merror[0m] [0m[0m    branch_module.io.in_A       := register_module.io.rdata1[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Decode.scala:91:22: value in_B is not a member of chisel3.Bundle{val func3: chisel3.UInt; val br_ins: chisel3.Bool; val inpA: chisel3.UInt; val inpB: chisel3.UInt; val br_taken: chisel3.Bool}[0m
+[0m[[0m[31merror[0m] [0m[0m    branch_module.io.in_B       := register_module.io.rdata2[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Decode.scala:97:36: not found: value SB_type[0m
+[0m[[0m[31merror[0m] [0m[0m    when(cu_module.io.ins(6,0) === SB_type)[0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Decode.scala:102:36: not found: value lui[0m
+[0m[[0m[31merror[0m] [0m[0m    when(cu_module.io.ins(6,0) === lui)    [0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Decode.scala:106:42: not found: value auipc[0m
+[0m[[0m[31merror[0m] [0m[0m    }.elsewhen(cu_module.io.ins(6,0) === auipc )[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Decode.scala:108:9: not found: value alu_module[0m
+[0m[[0m[31merror[0m] [0m[0m        alu_module.io.in_A := (io.decode_pc_out).asUInt[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Decode.scala:109:9: not found: value alu_module[0m
+[0m[[0m[31merror[0m] [0m[0m        alu_module.io.in_B := cu_module.io.immediate[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Decode.scala:110:37: not found: value alu_module[0m
+[0m[[0m[31merror[0m] [0m[0m        register_module.io.wdata := alu_module.io.out[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Decode.scala:119:9: not found: value alu_module[0m
+[0m[[0m[31merror[0m] [0m[0m        alu_module.io.in_A := (io.decode_pc_out).asUInt[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Decode.scala:120:9: not found: value alu_module[0m
+[0m[[0m[31merror[0m] [0m[0m        alu_module.io.in_B := cu_module.io.immediate[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Decode.scala:121:9: not found: value alu_module[0m
+[0m[[0m[31merror[0m] [0m[0m        alu_module.io.alu_Op := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Decode.scala:122:33: not found: value alu_module[0m
+[0m[[0m[31merror[0m] [0m[0m        io.decode_pc_br_imm := (alu_module.io.out).asSInt[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Decode.scala:124:42: not found: value unb_ins[0m
+[0m[[0m[31merror[0m] [0m[0m    }.elsewhen(cu_module.io.ins(6,0) === unb_ins)   // Unconditional branch jal instruction[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Decode.scala:126:9: not found: value alu_module[0m
+[0m[[0m[31merror[0m] [0m[0m        alu_module.io.in_A := (io.decode_pc_out).asUInt[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Decode.scala:127:9: not found: value alu_module[0m
+[0m[[0m[31merror[0m] [0m[0m        alu_module.io.in_B := cu_module.io.immediate[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Decode.scala:128:9: not found: value alu_module[0m
+[0m[[0m[31merror[0m] [0m[0m        alu_module.io.alu_Op := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Decode.scala:129:35: not found: value alu_module[0m
+[0m[[0m[31merror[0m] [0m[0m        io.decode_pc_br_imm   := (alu_module.io.out).asSInt[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Decode.scala:133:42: not found: value jalr[0m
+[0m[[0m[31merror[0m] [0m[0m    }.elsewhen(cu_module.io.ins(6,0) === jalr)      // Unconditional branch jalr instructioni[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Decode.scala:135:9: not found: value alu_module[0m
+[0m[[0m[31merror[0m] [0m[0m        alu_module.io.alu_Op := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Decode.scala:136:9: not found: value alu_module[0m
+[0m[[0m[31merror[0m] [0m[0m        alu_module.io.in_A := register_module.io.rdata1[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Decode.scala:137:9: not found: value alu_module[0m
+[0m[[0m[31merror[0m] [0m[0m        alu_module.io.in_B := cu_module.io.immediate[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Decode.scala:138:33: not found: value alu_module[0m
+[0m[[0m[31merror[0m] [0m[0m        io.decode_pc_br_imm := (alu_module.io.out).asSInt      // rs1 + imm[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Decode.scala:143:9: not found: value alu_module[0m
+[0m[[0m[31merror[0m] [0m[0m        alu_module.io.alu_Op := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Decode.scala:145:38: not found: value alu_module[0m
+[0m[[0m[31merror[0m] [0m[0m        register_module.io.wdata :=  alu_module.io.out[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Fetch.scala:18:47: not found: value counter_size[0m
+[0m[[0m[31merror[0m] [0m[0mError occurred in an application involving default arguments.[0m
+[0m[[0m[31merror[0m] [0m[0m    val pc_module_Fetch       = Module(new PC(counter_size))[0m
+[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Memory.scala:48:28: not found: value cu_module[0m
+[0m[[0m[31merror[0m] [0m[0m        io.mem_alu_in_A := cu_module.io.immediate[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Memory.scala:49:28: not found: value register_module[0m
+[0m[[0m[31merror[0m] [0m[0m        io.mem_alu_in_B := register_module.io.rdata1  // write according to S-format[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Memory.scala:55:9: not found: value dmem_module[0m
+[0m[[0m[31merror[0m] [0m[0m        dmem_module.io.addr := io.mem_alu_out(11,2)[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Memory.scala:56:9: not found: value dmem_module[0m
+[0m[[0m[31merror[0m] [0m[0m        dmem_module.io.mask := cu_module.io.mask_val[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Memory.scala:56:32: not found: value cu_module[0m
+[0m[[0m[31merror[0m] [0m[0m        dmem_module.io.mask := cu_module.io.mask_val[0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Memory.scala:125:17: not found: value dmem_module[0m
+[0m[[0m[31merror[0m] [0m[0m                dmem_module.io.addr := temp_addr + 1.U[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Memory.scala:153:17: not found: value dmem_module[0m
+[0m[[0m[31merror[0m] [0m[0m                dmem_module.io.addr := temp_addr + 1.U[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Memory.scala:165:17: not found: value dmem_module[0m
+[0m[[0m[31merror[0m] [0m[0m                dmem_module.io.addr := temp_addr + 1.U[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/Memory.scala:177:17: not found: value dmem_module[0m
+[0m[[0m[31merror[0m] [0m[0m                dmem_module.io.addr := temp_addr + 1.U[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/WriteBack.scala:34:32: not found: value cu_module[0m
+[0m[[0m[31merror[0m] [0m[0m        io.wb_alu_in_A      := cu_module.io.immediate[0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/WriteBack.scala:35:32: not found: value register_module[0m
+[0m[[0m[31merror[0m] [0m[0m        io.wb_alu_in_B      := register_module.io.rdata1[0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/WriteBack.scala:38:9: not found: value dmem_module[0m
+[0m[[0m[31merror[0m] [0m[0m        dmem_module.io.addr    := io.wb_alu_out(11,2)[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/WriteBack.scala:39:38: value mem_alu_out is not a member of chisel3.Bundle{val wb_mask_addr2: chisel3.UInt; val wb_opcode: chisel3.UInt; val wb_func3_7: chisel3.UInt; val wb_cu_immediate: chisel3.UInt; val wb_dmem_dataOut: chisel3.Vec[chisel3.UInt]; val wb_alu_out: chisel3.UInt; val wb_alu_in_A: chisel3.UInt; val wb_alu_in_B: chisel3.UInt; val wb_alu_Op: chisel3.UInt; val wb_dataOut: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m        val next_address        = io.mem_alu_out(11,2)[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/WriteBack.scala:42:17: value mem_func3_7 is not a member of chisel3.Bundle{val wb_mask_addr2: chisel3.UInt; val wb_opcode: chisel3.UInt; val wb_func3_7: chisel3.UInt; val wb_cu_immediate: chisel3.UInt; val wb_dmem_dataOut: chisel3.Vec[chisel3.UInt]; val wb_alu_out: chisel3.UInt; val wb_alu_in_A: chisel3.UInt; val wb_alu_in_B: chisel3.UInt; val wb_alu_Op: chisel3.UInt; val wb_dataOut: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m        when(io.mem_func3_7 === 0.U)   // Load Byte[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/WriteBack.scala:72:22: value mem_func3_7 is not a member of chisel3.Bundle{val wb_mask_addr2: chisel3.UInt; val wb_opcode: chisel3.UInt; val wb_func3_7: chisel3.UInt; val wb_cu_immediate: chisel3.UInt; val wb_dmem_dataOut: chisel3.Vec[chisel3.UInt]; val wb_alu_out: chisel3.UInt; val wb_alu_in_A: chisel3.UInt; val wb_alu_in_B: chisel3.UInt; val wb_alu_Op: chisel3.UInt; val wb_dataOut: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m        .elsewhen(io.mem_func3_7 === 1.U)   // Load Half word[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/WriteBack.scala:97:17: not found: value dmem_module[0m
+[0m[[0m[31merror[0m] [0m[0m                dmem_module.io.addr := next_address + 1.U[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/WriteBack.scala:108:22: value mem_func3_7 is not a member of chisel3.Bundle{val wb_mask_addr2: chisel3.UInt; val wb_opcode: chisel3.UInt; val wb_func3_7: chisel3.UInt; val wb_cu_immediate: chisel3.UInt; val wb_dmem_dataOut: chisel3.Vec[chisel3.UInt]; val wb_alu_out: chisel3.UInt; val wb_alu_in_A: chisel3.UInt; val wb_alu_in_B: chisel3.UInt; val wb_alu_Op: chisel3.UInt; val wb_dataOut: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m        .elsewhen(io.mem_func3_7 === 2.U)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/WriteBack.scala:122:17: not found: value dmem_module[0m
+[0m[[0m[31merror[0m] [0m[0m                dmem_module.io.addr := next_address + 1.U[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/WriteBack.scala:132:17: not found: value dmem_module[0m
+[0m[[0m[31merror[0m] [0m[0m                dmem_module.io.addr := next_address + 1.U[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/WriteBack.scala:141:17: not found: value dmem_module[0m
+[0m[[0m[31merror[0m] [0m[0m                dmem_module.io.addr := next_address + 1.U[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/WriteBack.scala:151:22: value mem_func3_7 is not a member of chisel3.Bundle{val wb_mask_addr2: chisel3.UInt; val wb_opcode: chisel3.UInt; val wb_func3_7: chisel3.UInt; val wb_cu_immediate: chisel3.UInt; val wb_dmem_dataOut: chisel3.Vec[chisel3.UInt]; val wb_alu_out: chisel3.UInt; val wb_alu_in_A: chisel3.UInt; val wb_alu_in_B: chisel3.UInt; val wb_alu_Op: chisel3.UInt; val wb_dataOut: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m        .elsewhen(io.mem_func3_7 === 4.U)  // Load Byte Unsigned[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/WriteBack.scala:190:22: value mem_func3_7 is not a member of chisel3.Bundle{val wb_mask_addr2: chisel3.UInt; val wb_opcode: chisel3.UInt; val wb_func3_7: chisel3.UInt; val wb_cu_immediate: chisel3.UInt; val wb_dmem_dataOut: chisel3.Vec[chisel3.UInt]; val wb_alu_out: chisel3.UInt; val wb_alu_in_A: chisel3.UInt; val wb_alu_in_B: chisel3.UInt; val wb_alu_Op: chisel3.UInt; val wb_dataOut: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m        .elsewhen(io.mem_func3_7 === 5.U)    // Load Half unsigned[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/WriteBack.scala:219:17: not found: value dmem_module[0m
+[0m[[0m[31merror[0m] [0m[0m                dmem_module.io.addr := next_address + 1.U[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m59 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 9 s, completed Oct 19, 2023 5:12:42 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

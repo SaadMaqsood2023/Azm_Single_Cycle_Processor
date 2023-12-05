@@ -1,0 +1,9 @@
+id: file://<HOME>/Chisel%20Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/WriteBack.scala:[67..67) in Input.VirtualFile("file://<HOME>/Chisel%20Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/WriteBack.scala", "package DataPathSSP
+
+import chisel3._
+import chisel3.util._
+
+class ")
+file://<HOME>/Chisel%20Folder/Scala-Chisel-Learning-Journey-main/src/main/scala/gcd/DataPathSSP/WriteBack.scala:6: error: expected identifier; obtained eof
+class 
+      ^
