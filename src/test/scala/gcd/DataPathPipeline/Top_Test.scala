@@ -13,7 +13,7 @@ class Top_Test extends FreeSpec with ChiselScalatestTester
         test(new CoreTop) { a =>   
             // Write the data type and width of inputs, not the data itself
             a.io.dataIn.poke("h00500213".U) // Dummy value
-            a.clock.step(150)
+            a.clock.step(250)
             // a.io.out.expect(5.S)   // Value being expected from the txt file.
             
         }

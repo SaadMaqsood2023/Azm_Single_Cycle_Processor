@@ -10,7 +10,7 @@
   {
     "class":"firrtl.annotations.LoadMemoryAnnotation",
     "target":"CoreTop.IMEM.async_mem",
-    "fileName":"/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main-Pipeline/src/main/scala/gcd/DataPathPipeline/assemblyHexcode.txt",
+    "fileName":"/home/saad/Chisel Folder/Git-repos/Scala-Chisel-Learning-Journey-main-Pipeline/src/main/scala/gcd/DataPathPipeline/assemblyHexcode.txt",
     "hexOrBinary":"h",
     "originalMemoryNameOpt":"async_mem"
   },

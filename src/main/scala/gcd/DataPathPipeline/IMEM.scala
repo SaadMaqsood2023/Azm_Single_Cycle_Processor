@@ -39,6 +39,6 @@ class IMEM extends Module
     val address_pc = Fill(2, 0.U) ## io.address >> div_4
     // loadMemoryFromFile(async_mem, "./Scala-Chisel-Learning-Journey-main/src/main/scala/DataPathSSP/assemblyHexcode.txt")
     // write the full path
-    loadMemoryFromFile(async_mem, "/home/saad/Chisel Folder/Scala-Chisel-Learning-Journey-main-Pipeline/src/main/scala/gcd/DataPathPipeline/assemblyHexcode.txt")
+    loadMemoryFromFile(async_mem, "/home/saad/Chisel Folder/Git-repos/Scala-Chisel-Learning-Journey-main-Pipeline/src/main/scala/gcd/DataPathPipeline/assemblyHexcode.txt")
     io.dataOut := async_mem.read(address_pc)
 }

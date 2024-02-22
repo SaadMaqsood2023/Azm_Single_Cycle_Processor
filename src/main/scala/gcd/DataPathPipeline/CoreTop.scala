@@ -161,6 +161,7 @@ class CoreTop extends Module
         // Giving inputs to ALU and then taking back the output  
         // execute_module.io.execute_in_A        := memory_module.io.mem_alu_in_A --old (we can directly assign the
         // immediate, so no need to create extra input port for immediate in the memory module)
+        memory_module.io.mem_rdata1           := decode_module.io.decode_rdata1
         execute_module.io.execute_in_A        := decode_module.io.decode_immediate
         execute_module.io.execute_in_B        := memory_module.io.mem_alu_in_B
         execute_module.io.execute_alu_Op      := memory_module.io.mem_alu_Op

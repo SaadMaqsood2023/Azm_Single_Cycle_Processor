@@ -315,9 +315,9 @@ class Memory extends Module
                 // io.mem_dataOut := dmem_module.io.dataOut
             }.elsewhen(io.mem_mask_addr2 === 1.U)
             {
-                val lw_num           = Cat(dmem_module.io.dataOut(3),dmem_module.io.dataOut(2),dmem_module.io.dataOut(1))
+                val lw_num           = Cat(dmem_module.io.dataOut(2),dmem_module.io.dataOut(1),dmem_module.io.dataOut(0))
                 dmem_module.io.addr := next_address + 1.U
-                io.mem_dataOut       := Cat( dmem_module.io.dataOut(0) ,lw_num)
+                io.mem_dataOut       := Cat( dmem_module.io.dataOut(3) ,lw_num)
 
                 // val lw_num = Cat(dmem_module.io.dataOut(23,8))
                 // dmem_module.io.addr := next_address + 1.U
@@ -325,18 +325,18 @@ class Memory extends Module
 
             }.elsewhen(io.mem_mask_addr2 === 2.U)
             {
-                val lw_num           = Cat(dmem_module.io.dataOut(3),dmem_module.io.dataOut(2))
+                val lw_num           = Cat(dmem_module.io.dataOut(1),dmem_module.io.dataOut(0))
                 dmem_module.io.addr := next_address + 1.U
-                io.mem_dataOut       := Cat(dmem_module.io.dataOut(1), dmem_module.io.dataOut(0) ,lw_num)
+                io.mem_dataOut       := Cat(dmem_module.io.dataOut(3), dmem_module.io.dataOut(2) ,lw_num)
 
                 // val lw_num = Cat(dmem_module.io.dataOut(31,16))
                 // dmem_module.io.addr := next_address + 1.U
                 // io.mem_dataOut := Cat(dmem_module.io.dataOut(15,0),lw_num)
             }.elsewhen(io.mem_mask_addr2 === 3.U)
             {
-                val lw_num           = dmem_module.io.dataOut(3)
+                val lw_num           = dmem_module.io.dataOut(0)
                 dmem_module.io.addr := next_address + 1.U
-                io.mem_dataOut       := Cat(dmem_module.io.dataOut(2), dmem_module.io.dataOut(1), dmem_module.io.dataOut(0), lw_num)
+                io.mem_dataOut       := Cat(dmem_module.io.dataOut(3), dmem_module.io.dataOut(2), dmem_module.io.dataOut(1), lw_num)
 
                 // val lw_num = dmem_module.io.dataOut(31,24)
                 // dmem_module.io.addr := next_address + 1.U
