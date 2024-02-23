@@ -58,7 +58,7 @@ Now enter the command:
 ```
 sbt:Azm_Single_Cycle_Processor> testOnly DataPathPipeline.Top_Test -- -DwriteVcd=1
 ```
-After successfully running the code go test_run_dir and open the Top.Vcd on gktwave to see the generated results.
+After successfully running the code go test_run_dir and open the CoreTop.Vcd on gktwave to see the generated results.
 
 ### It worked!
 
